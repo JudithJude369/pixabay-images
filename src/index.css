@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* CSS DESIGN USING MOBILE-FIRST APPROACH */
+:root {
+  /* Typography */
+  --FF: "Space Mono", monospace;
+  --FS: 1rem;
+  --FSH: 2rem;
+  /* Colors */
+  --purple: #645cff;
+  --grey-900: #0f172a;
+  --grey-50: #f8fafc;
+}
+
+/* CSS RESET */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  scroll-behavior: smooth;
+  overflow: scroll;
+  font-size: 100%;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+p {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: capitalize;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  transition: background-color 3s ease-in-out;
+  transition: color 3s ease-in-out;
+  min-height: 100vh;
+  line-height: 1;
+  font-optical-sizing: auto;
+  font-family: var(--FF);
+  font-size: var(--FS);
+  background-color: var(--grey-50);
+  color: var(--grey-900);
+  padding: 2rem 0;
+  font-weight: 400;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* content style */
+.icon {
+  font-size: 2rem;
+  border: transparent;
+  display: flex;
+  justify-content: end;
+  padding: 0 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.title-container {
+  display: grid;
+  place-content: center;
+}
+.title {
+  color: var(--purple);
+  font-weight: 700;
+  font-size: var(--FSH);
+}
+/* dark theme css */
+.dark-theme {
+  background-color: var(--grey-900);
+  color: var(--grey-50);
+}
+
+/* Tablet Styles */
+
+@media (min-width: 768px) {
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+}
