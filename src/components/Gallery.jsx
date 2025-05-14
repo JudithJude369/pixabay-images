@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import { useGlobalContext } from "../context/context";
+import { MdMargin } from "react-icons/md";
 
 // using react query for data fetching and displaying images
 
@@ -19,13 +20,13 @@ const Gallery = () => {
   });
   console.log(response.data);
   if (response.isPending) {
-    return <h4>Loading...</h4>;
+    return <h4 style={{ margin: "6rem" }}>Loading...</h4>;
   }
   if (response.isError) {
-    return <h4>There was error...</h4>;
+    return <h4 style={{ margin: "6rem" }}>There was error...</h4>;
   }
   if (response.data.length < 1) {
-    return <h4>No results found...</h4>;
+    return <h4 style={{ margin: "6rem" }}>No results found...</h4>;
   }
   return (
     <section className="image-container">
