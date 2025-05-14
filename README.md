@@ -16,14 +16,14 @@ The challenge
 Links
 ## [Solution URL](https://github.com/JudithJude369/pixabay-images)
 ##   [Live Site URL](https://pixabay-images-pi.vercel.app/)
-My process
-Built with
-Semantic HTML5 markup
-CSS custom properties
-Flexbox
-CSS Grid
-React
-Mobile-first workflow
-React - JS library
-Raect-Query
+## My process
+## Built with
+# Semantic HTML5 markup
+# CSS custom properties
+# Flexbox
+# CSS Grid
+# React
+# Mobile-first workflow
+# React - JS library
+# Raect-Query
 
