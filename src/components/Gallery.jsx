@@ -1,7 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import { useGlobalContext } from "../context/context";
-import { MdMargin } from "react-icons/md";
 
 // using react query for data fetching and displaying images
 
@@ -35,15 +34,14 @@ const Gallery = () => {
           <div key={item.id}>
             <img src={item.webformatURL} alt="" className="img" />
             <div className="text-container">
-              <p>
+              <p style={{ marginTop: "0.7rem" }}>
                 <strong>Image By: </strong>
                 {item.user}
               </p>
-              <p>
-                {" "}
+              <p style={{ marginTop: "0.7rem" }}>
                 <strong>Tags:</strong> {item.tags}
               </p>
-              <p>
+              <p style={{ marginTop: "0.7rem" }}>
                 <strong>Resolution:</strong> {item.webformatHeight} X{" "}
                 {item.webformatWidth}
               </p>
