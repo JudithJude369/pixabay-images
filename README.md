@@ -1,12 +1,33 @@
-# React + Vite
+PIXABAY IMAGE SEARCH PROJECT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I did this project to sharpen my React skills. I hoped this project proved that now I am ready to work in the professional world.
 
-Currently, two official plugins are available:
+Now about this README, I wrote everything starting from tools that I used, useful articles, what I had learned, and much more.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Disclaimer
+This project is solely for learning purposes. I take no any responsibility or liability for the accuracy, completeness, or usefulness of any information provided in this project. You should not use it as a reference for creating your project.
 
-## Expanding the ESLint configuration
+The challenge
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Screenshot
+alt text
+
+Links
+Solution URL
+Live Site URL
+My process
+Built with
+Semantic HTML5 markup
+CSS custom properties
+Flexbox
+CSS Grid
+React
+Mobile-first workflow
+React - JS library
+Author
+Frontend Mentor JudithJude
+Twitter Judith
+Acknowledgments
+Omololu Jumat really helped me in this project. Thank you very much, Lolu and I'm very grateful!
+
+See his Portfolio website Omololu

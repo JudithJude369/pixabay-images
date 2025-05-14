@@ -1,17 +1,19 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
+import { useGlobalContext } from "../context/context";
 
-// API = "50258272-21da67c9547761fff04b85ae8";
-//
 // using react query for data fetching and displaying images
-const url =
-  "https://pixabay.com/api/?key=50258272-21da67c9547761fff04b85ae8&q=cat&image_type=photo";
 
+const url = `https://pixabay.com/api/?key=${
+  import.meta.env.VITE_API_KEY
+}&image_type=photo&pretty=true`;
 const Gallery = () => {
+  const { searchTerm } = useGlobalContext();
   const response = useQuery({
-    queryKey: ["images"],
+    queryKey: ["images", searchTerm],
     queryFn: async () => {
-      const result = await axios.get(url);
+      // const result = await axios.get(url);
+      const result = await axios.get(`${url}&q=${searchTerm}`);
       return result.data;
     },
   });
@@ -41,8 +43,8 @@ const Gallery = () => {
                 <strong>Tags:</strong> {item.tags}
               </p>
               <p>
-                <strong>Resolution:</strong> {item.imageHeight} X{" "}
-                {item.imageWidth}
+                <strong>Resolution:</strong> {item.webformatHeight} X{" "}
+                {item.webformatWidth}
               </p>
             </div>
           </div>
