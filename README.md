@@ -1,4 +1,4 @@
-PIXABAY IMAGE SEARCH PROJECT
+## PIXABAY IMAGE SEARCH PROJECT
 
 I did this project to sharpen my React skills. I hoped this project proved that now I am ready to work in the professional world.
 
@@ -9,13 +9,13 @@ This project is solely for learning purposes. I take no any responsibility or li
 
 The challenge
 
-Screenshot
+## Screenshot
 ![pixabay-project](https://github.com/user-attachments/assets/53759010-3a75-45d0-90b1-f7e2fe78b825)
 
 
 Links
- [Solution URL](https://github.com/JudithJude369/pixabay-images)
-  [Live Site URL](https://pixabay-images-pi.vercel.app/)
+## [Solution URL](https://github.com/JudithJude369/pixabay-images)
+##   [Live Site URL](https://pixabay-images-pi.vercel.app/)
 My process
 Built with
 Semantic HTML5 markup
