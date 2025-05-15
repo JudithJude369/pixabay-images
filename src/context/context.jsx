@@ -3,17 +3,17 @@ import { createContext, useContext, useEffect, useState } from "react";
 const AppContext = createContext();
 
 // users prefer darkmode
-// const getInitialDarkMode = () => {
-//   const prefersDarkMode = window.matchMedia(
-//     "(prefers-color-scheme:dark)"
-//   ).matches;
-//   const storedDarkMode = localStorage.getItem("dark-theme") === "true";
-//   return storedDarkMode || prefersDarkMode;
-// };
+const getInitialDarkMode = () => {
+  const prefersDarkMode = window.matchMedia(
+    "(prefers-color-scheme:dark)"
+  ).matches;
+  const storedDarkMode = localStorage.getItem("dark-theme") === "true";
+  return storedDarkMode || prefersDarkMode;
+};
 
 export const AppProvider = ({ children }) => {
   // setting up dark/light mode
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const [isDarkTheme, setIsDarkTheme] = useState(getInitialDarkMode());
   const [searchTerm, setSearchTerm] = useState("");
 
   const toggleDarkTheme = () => {
