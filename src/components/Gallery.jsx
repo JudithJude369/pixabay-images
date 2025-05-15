@@ -24,7 +24,7 @@ const Gallery = () => {
   if (response.isError) {
     return <h4 style={{ margin: "6rem" }}>There was error...</h4>;
   }
-  if (response.data.length < 1) {
+  if (response.data.hits.length < 1) {
     return <h4 style={{ margin: "6rem" }}>No results found...</h4>;
   }
   return (
