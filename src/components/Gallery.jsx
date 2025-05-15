@@ -19,13 +19,23 @@ const Gallery = () => {
   });
   console.log(response.data);
   if (response.isPending) {
-    return <h4 style={{ margin: "6rem" }}>Loading...</h4>;
+    return (
+      <h4 style={{ textAlign: "center", marginTop: "3rem" }}>Loading...</h4>
+    );
   }
   if (response.isError) {
-    return <h4 style={{ margin: "6rem" }}>There was error...</h4>;
+    return (
+      <h4 style={{ textAlign: "center", marginTop: "3rem" }}>
+        There was error...
+      </h4>
+    );
   }
   if (response.data.hits.length < 1) {
-    return <h4 style={{ margin: "6rem" }}>No results found...</h4>;
+    return (
+      <h4 style={{ textAlign: "center", marginTop: "3rem" }}>
+        No results found...
+      </h4>
+    );
   }
   return (
     <section className="image-container">
