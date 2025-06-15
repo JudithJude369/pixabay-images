@@ -25,5 +25,5 @@ Links
 # React
 # Mobile-first workflow
 # React - JS library
-# Raect-Query
+# React-Query
 
